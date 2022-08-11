@@ -10,7 +10,7 @@ class Tracetest < Formula
 
   on_macos do
     url "https://github.com/schoren/tracetest/releases/download/v0.6.4/tracetest_0.6.4_darwin_all.tar.gz"
-    sha256 "266b321c7cc7a1173e883bd5f6182644ea01e05e1065bc0eb2fd873a4fafd7ef"
+    sha256 "f085d57470bf767c87e4905f9c485135ded75e8319115522a7564769673b2bc9"
 
     def install
       bin.install "tracetest"
@@ -20,7 +20,7 @@ class Tracetest < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/schoren/tracetest/releases/download/v0.6.4/tracetest_0.6.4_linux_arm64.tar.gz"
-      sha256 "2c99e8b29f82af97f642f72131f48664a0f1e82e06ea9381f27e39bf5fbf7eee"
+      sha256 "e50a3168a6b1ecfa87687f535f61f75c78540c7eca22e730cfc6dcb18e8023ed"
 
       def install
         bin.install "tracetest"
@@ -28,7 +28,7 @@ class Tracetest < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/schoren/tracetest/releases/download/v0.6.4/tracetest_0.6.4_linux_amd64.tar.gz"
-      sha256 "71e64912845e7112dcd4c72a4357abd817c6c40f755eda70a11ddde4a3ba8ecf"
+      sha256 "d3609f7ecc2d3a0722af1781cdad53d6ef5ab3485ba6193ffd2a8b7775151a52"
 
       def install
         bin.install "tracetest"
