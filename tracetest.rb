@@ -5,13 +5,13 @@
 class Tracetest < Formula
   desc ""
   homepage "https://tracetest.kubeshop.io/"
-  version "0.11.4"
+  version "0.11.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.4/tracetest_0.11.4_darwin_amd64.tar.gz"
-      sha256 "b021a5c94ffc00b8fc856056beca698da10da5424581d9c9bc72cc5e2dd00cb4"
+      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.5/tracetest_0.11.5_darwin_amd64.tar.gz"
+      sha256 "dd49f140eba6e0e2c42b38e803a0b2dd91d996a2e1fef4639d35433a4083f733"
 
       def install
         bin.install "tracetest"
@@ -19,8 +19,8 @@ class Tracetest < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.4/tracetest_0.11.4_darwin_arm64.tar.gz"
-      sha256 "8276ade40f4e72884a45e5ecc83ea4ece580aca51a4d299bde31311f032142fe"
+      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.5/tracetest_0.11.5_darwin_arm64.tar.gz"
+      sha256 "ea12714f3552ad72c133a83539073121cab616fb483a92370a28729d422ea616"
 
       def install
         bin.install "tracetest"
@@ -30,18 +30,18 @@ class Tracetest < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.4/tracetest_0.11.4_linux_amd64.tar.gz"
-      sha256 "e154098e8d44bf477dce0f8d24d6327a95565c1ca314be4f163165154ad521cf"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.5/tracetest_0.11.5_linux_arm64.tar.gz"
+      sha256 "6b545af94a104ff35673fdfc8ca2b2b33e605a08b260c354fcf04f983d86d67b"
 
       def install
         bin.install "tracetest"
         bin.install "tracetest-server"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.4/tracetest_0.11.4_linux_arm64.tar.gz"
-      sha256 "eb5f122239f875fdbedb66b9ffc8445ea6a223b5d3b196b4a127a371f204d151"
+    if Hardware::CPU.intel?
+      url "https://github.com/kubeshop/tracetest/releases/download/v0.11.5/tracetest_0.11.5_linux_amd64.tar.gz"
+      sha256 "f5b611796b35eeaaec4795998c77a5de95ef6d2bcedc125bfb2101e3afc11879"
 
       def install
         bin.install "tracetest"
