@@ -5,13 +5,13 @@
 class Tracetest < Formula
   desc ""
   homepage "https://tracetest.kubeshop.io/"
-  version "1.6.2"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kubeshop/tracetest/releases/download/v1.6.2/tracetest_1.6.2_darwin_amd64.tar.gz"
-      sha256 "98c340d69e6747079eecfdf6edd7d431dda620b6ddf7c14abf772e9f518ffd1b"
+      url "https://github.com/kubeshop/tracetest/releases/download/v1.7.0/tracetest_1.7.0_darwin_amd64.tar.gz"
+      sha256 "9fe8fa594f031198f37e880e81a86a0d33ff9f97847b0c8a02c93d64ab136b76"
 
       def install
         bin.install "tracetest"
@@ -19,8 +19,8 @@ class Tracetest < Formula
       end
     end
     on_arm do
-      url "https://github.com/kubeshop/tracetest/releases/download/v1.6.2/tracetest_1.6.2_darwin_arm64.tar.gz"
-      sha256 "5a1324fa4c9744a825e22080f4247c5914454dee721013f0df7873689fb94605"
+      url "https://github.com/kubeshop/tracetest/releases/download/v1.7.0/tracetest_1.7.0_darwin_arm64.tar.gz"
+      sha256 "55b618b1d6e6ced44b3c15a1460b9668c63f82c9d3c687cafe5246d91c696567"
 
       def install
         bin.install "tracetest"
@@ -32,8 +32,8 @@ class Tracetest < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubeshop/tracetest/releases/download/v1.6.2/tracetest_1.6.2_linux_amd64.tar.gz"
-        sha256 "f7373e01687d547ebff8de51a048cfacb9d96c668d186842020c8500a729425b"
+        url "https://github.com/kubeshop/tracetest/releases/download/v1.7.0/tracetest_1.7.0_linux_amd64.tar.gz"
+        sha256 "c5944e282d4bb11b4384587e4fda7e8525c45a3a8470b84a7dba559a4c96d676"
 
         def install
           bin.install "tracetest"
@@ -43,8 +43,8 @@ class Tracetest < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kubeshop/tracetest/releases/download/v1.6.2/tracetest_1.6.2_linux_arm64.tar.gz"
-        sha256 "99898a78eaa3b7464decc1fba8b5d02ad2085c24d1a503e24de3cd68dbe360c3"
+        url "https://github.com/kubeshop/tracetest/releases/download/v1.7.0/tracetest_1.7.0_linux_arm64.tar.gz"
+        sha256 "7a2a41c807b0edb2cb9d030de3acac7e01f1c51e23a32a3f3fd65afb88e828ee"
 
         def install
           bin.install "tracetest"
